@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java/BlockChain/BlockChain.iml" filepath="$PROJECT_DIR$/Java/BlockChain/BlockChain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/DSAlgo/DSAlgo.iml" filepath="$PROJECT_DIR$/Java/DSAlgo/DSAlgo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/GenericCode/GenericCode.iml" filepath="$PROJECT_DIR$/Java/GenericCode/GenericCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/MerkleTree/MerkleTree.iml" filepath="$PROJECT_DIR$/Java/MerkleTree/MerkleTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/Scrooge/Scrooge.iml" filepath="$PROJECT_DIR$/Java/Scrooge/Scrooge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/TxnValidation/TxnValidation.iml" filepath="$PROJECT_DIR$/Java/TxnValidation/TxnValidation.iml" />
+    </modules>
+  </component>
+</project>
