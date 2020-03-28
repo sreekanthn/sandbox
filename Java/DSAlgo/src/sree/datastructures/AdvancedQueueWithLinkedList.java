@@ -8,7 +8,7 @@ public class AdvancedQueueWithLinkedList<T> implements Iterable<T> {
     public java.util.LinkedList<T> list = new LinkedList<>();
 
     public AdvancedQueueWithLinkedList(T firstElement) {
-
+        enQueue(firstElement);
     }
 
     public int size() {
