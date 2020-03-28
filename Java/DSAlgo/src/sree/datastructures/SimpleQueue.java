@@ -1,3 +1,5 @@
+package sree.datastructures;
+
 public class SimpleQueue {
 
     private static class Node {

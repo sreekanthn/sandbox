@@ -1,3 +1,5 @@
+package sree.datastructures;
+
 public class SimpleStack {
     private static class Node {
         private int data;
