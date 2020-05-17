@@ -1,5 +1,6 @@
-import java.io.*;
 import org.apache.commons.io.FilenameUtils;
+
+import java.io.File;
 
 public class Cleaner
 {

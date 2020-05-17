@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java/BlockChain/BlockChain.iml" filepath="$PROJECT_DIR$/Java/BlockChain/BlockChain.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/DSAlgo/DSAlgo.iml" filepath="$PROJECT_DIR$/Java/DSAlgo/DSAlgo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Java/FileCleaner/FileCleaner.iml" filepath="$PROJECT_DIR$/Java/FileCleaner/FileCleaner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/DigitalAssetsManagement/DigitalAssetsManagement.iml" filepath="$PROJECT_DIR$/Java/DigitalAssetsManagement/DigitalAssetsManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/DigitalAssetsManagement/FileCleaner.iml" filepath="$PROJECT_DIR$/Java/DigitalAssetsManagement/FileCleaner.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/GenericCode/GenericCode.iml" filepath="$PROJECT_DIR$/Java/GenericCode/GenericCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/MerkleTree/MerkleTree.iml" filepath="$PROJECT_DIR$/Java/MerkleTree/MerkleTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Scrooge/Scrooge.iml" filepath="$PROJECT_DIR$/Java/Scrooge/Scrooge.iml" />
