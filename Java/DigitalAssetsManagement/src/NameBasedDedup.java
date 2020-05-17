@@ -3,12 +3,11 @@
 *  Each run instance destroys it's storage at the end of the run; so it has no state after the run
 * */
 
+import org.apache.commons.io.FilenameUtils;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
-
-import org.apache.commons.io.FilenameUtils;
 
 public class NameBasedDedup {
 
