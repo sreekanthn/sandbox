@@ -42,12 +42,16 @@ public class NameBasedDedup {
             }
         }
         dedup.printResults();
+
+        // delete the duplicate files - Use with Caution; it will delete the forst file which is found to be the duplicate and leave the second file intact
+        // dedup.deleteOneOfTheFiles();
     }
 
     private void processFiles(File f) {
 
         // it is a file, and clean it up
         if (f.isDirectory()){ //nested directories
+            System.out.println("Processing directory " + f.getAbsolutePath());
             File[] listOfFiles = f.listFiles();
             if (listOfFiles != null) {
                 for (File file: listOfFiles){
@@ -57,16 +61,16 @@ public class NameBasedDedup {
                     }
                     else{
                         // it is a file, and clean it up
-                        dedupFiles(file);
+                        findDuplicateFiles(file);
                     }
                 }
             }
         }
-        else dedupFiles(f);
+        else findDuplicateFiles(f);
 
     }
 
-    private void dedupFiles(File file) {
+    private void findDuplicateFiles(File file) {
         String path = file.getAbsolutePath();
         String fileName = FilenameUtils.getBaseName(String.valueOf(file));
         ArrayList<String> pathList;
@@ -84,17 +88,39 @@ public class NameBasedDedup {
     }
 
     private void printResults() {
+        long count =0;
         for (String key:nameMap.keySet()) {
             ArrayList<String> value = nameMap.get(key);
             if (value.size() > 1)
             {
+                count++;
                 System.out.printf( "File %s has been found at multiple locations \n", key);
                 for (String path:value) {
                     System.out.printf("%s \n" , path);
                 }
-                System.out.println();
+                System.out.println("No of duplicated files " + count);
             }
         }
     }
+
+    private void deleteOneOfTheFiles(){
+        long count =0;
+        for (String key:nameMap.keySet()) {
+            ArrayList<String> value = nameMap.get(key);
+            if (value.size() > 1)
+            {
+                System.out.printf( "Deleting the first file found %s \n", key);
+                ClassLoader classLoader = getClass().getClassLoader();
+                System.out.println("Path " + value.get(1));
+                File file = new File(value.get(1));
+                if (file.delete()){
+                    count++;
+                }
+
+            }
+        }
+        System.out.println("Deleted %n files \n" + count);
+    }
+    
 
 }
